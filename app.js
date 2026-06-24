@@ -125,7 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const monthlyBillInput = document.getElementById('monthly-bill');
     const billDisplay = document.getElementById('bill-display');
     const exposureSelect = document.getElementById('solar-exposure');
-    const propertyBtns = document.querySelectorAll('.prop-btn');
     
     // Result elements
     const systemSizeEl = document.getElementById('res-system-size');
@@ -134,18 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const paybackEl = document.getElementById('res-payback');
     const treesEl = document.getElementById('res-trees');
     const co2El = document.getElementById('res-co2');
-
-    let activePropertyType = 'residential'; // Default
-
-    // Handle property type button toggles
-    propertyBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            propertyBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            activePropertyType = btn.getAttribute('data-type');
-            calculateSolarPotential();
-        });
-    });
 
     // Handle inputs changes
     monthlyBillInput.addEventListener('input', (e) => {
@@ -164,11 +151,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const exposureMultiplier = parseFloat(exposureSelect.value);
         
         /* Calculations logic:
-           - Average Cost per Unit: ₹7.5 (Residential), ₹9.0 (Commercial)
+           - Average Cost per Unit: ₹7.5 (Residential)
            - 1 kWp Solar panel array produces ~120 kWh per month under optimal conditions.
-           - Cost of installation: approx ₹60,000 per kW (Residential), ₹52,000 per kW (Commercial).
+           - Cost of installation: approx ₹60,000 per kW (Residential).
         */
-        const unitRate = activePropertyType === 'residential' ? 7.5 : 9.0;
+        const unitRate = 7.5;
         const estUnitsConsumed = monthlyBill / unitRate;
         
         // System size in kW needed to offset ~90% of electricity bill (or max offset)
@@ -182,8 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Round to 1 decimal place
         neededSystemSize = Math.round(neededSystemSize * 10) / 10;
 
-        // Estimated Monthly Savings: residential offsets up to 90%, commercial 80%
-        const offsetPercent = activePropertyType === 'residential' ? 0.90 : 0.80;
+        // Estimated Monthly Savings: residential offsets up to 90%
+        const offsetPercent = 0.90;
         let monthlySavings = monthlyBill * offsetPercent * exposureMultiplier;
         monthlySavings = Math.min(monthlyBill, Math.round(monthlySavings));
 
@@ -191,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const roofSpaceNeeded = Math.round(neededSystemSize * 100);
 
         // Payback Period (ROI): System cost / Annual savings
-        const costPerKw = activePropertyType === 'residential' ? 60000 : 52000;
+        const costPerKw = 60000;
         const totalSystemCost = neededSystemSize * costPerKw;
         const annualSavings = monthlySavings * 12;
         
