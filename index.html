@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeyar Brightech | Premium Solar Energy Solutions</title>
+    <meta name="description" content="Switch to clean, sustainable power with Jeyar Brightech. Owned by Mr. Santhosh Kumar J. R., we deliver high-efficiency solar panel installations and smart energy storage.">
+    <meta name="keywords" content="solar panels, Jeyar Brightech, Santhosh Kumar J R, clean energy, solar installation, solar battery storage, solar savings calculator, renewable energy">
+    <meta name="author" content="Jeyar Brightech">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M12 2v2M12 20v2M4.93 4.93l1.41 1.41M16.24 16.24l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z'/></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-solar-panel"></i></span>
+                <span class="logo-text">Jeyar <span class="highlight">Brightech</span></span>
+            </a>
+            
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#solutions" class="nav-link">Solutions</a></li>
+                    <li><a href="#calculator" class="nav-link">Solar Calculator</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-header">Get Free Quote</a>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge animate-fade-in">
+                        <span class="badge-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        <span>Certified Solar Engineering Excellence</span>
+                    </div>
+                    <h1 class="hero-title animate-slide-up">
+                        Powering Tomorrow with <br><span class="gradient-text">Bright, Clean Energy</span>
+                    </h1>
+                    <p class="hero-subtitle animate-slide-up">
+                        Empowering homes and businesses with high-efficiency solar panel installations designed for maximum savings, energy independence, and environmental sustainability.
+                    </p>
+                    <div class="owner-tag animate-slide-up">
+                        <span class="owner-badge"><i class="fa-solid fa-signature"></i> Led by Mr. Santhosh Kumar J. R.</span>
+                    </div>
+                    <div class="hero-actions animate-slide-up">
+                        <a href="#calculator" class="btn btn-primary"><i class="fa-solid fa-calculator"></i> Calculate Savings</a>
+                        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-calendar-check"></i> Book Consultation</a>
+                    </div>
+                </div>
+                
+                <div class="hero-graphics animate-fade-in">
+                    <div class="hero-card glass-card">
+                        <div class="solar-panel-graphic">
+                            <div class="grid-line horizontal"></div>
+                            <div class="grid-line horizontal"></div>
+                            <div class="grid-line horizontal"></div>
+                            <div class="grid-line vertical"></div>
+                            <div class="grid-line vertical"></div>
+                            <div class="grid-line vertical"></div>
+                            <div class="sun-glow"></div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="1200">0</span><span class="stat-plus">kW+</span>
+                                <span class="stat-label">Installed Capacity</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="300">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-badge-float glass-card">
+                        <div class="badge-float-icon"><i class="fa-solid fa-bolt-lightning text-amber"></i></div>
+                        <div>
+                            <h4>Real-time Savings</h4>
+                            <p>Up to 90% Bill Reduction</p>
+                        </div>
+                    </div>
+                    <div class="hero-badge-float-2 glass-card">
+                        <div class="badge-float-icon"><i class="fa-solid fa-leaf text-emerald"></i></div>
+                        <div>
+                            <h4>Eco-Friendly</h4>
+                            <p>1500+ Tons CO2 Reduced</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fa-solid fa-chevron-down scroll-bounce"></i>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Who We Are</span>
+                    <h2 class="section-title">Driving Solar Innovation with Jeyar Brightech</h2>
+                    <p class="section-desc">We deliver customized, state-of-the-art solar installations that translate directly into clean power and massive utility bill savings.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info card glass-card reveal">
+                        <div class="about-icon-main"><i class="fa-solid fa-circle-info"></i></div>
+                        <h3>Our Vision & Commitment</h3>
+                        <p>Founded and spearheaded by <strong>Mr. Santhosh Kumar J. R.</strong>, Jeyar Brightech is committed to pioneering renewable energy solutions that are both technologically advanced and financially rewarding. We handle everything from site assessment, feasibility study, structural engineering, government net-metering approvals, to long-term monitoring.</p>
+                        <p>We source only premium Tier 1 solar components to guarantee that your green transition is highly reliable, storm-resilient, and built to yield maximum power for 25+ years.</p>
+                        <div class="owner-bio">
+                            <div class="owner-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                            <div>
+                                <h4 class="owner-name">Mr. Santhosh Kumar J. R.</h4>
+                                <p class="owner-title">Founder & Managing Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-values">
+                        <div class="value-card card glass-card reveal">
+                            <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="value-text">
+                                <h4>Unmatched Quality & Warranty</h4>
+                                <p>All our modules carry an industry-leading 25-year performance warranty coupled with comprehensive workmanship support.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-card card glass-card reveal">
+                            <div class="value-icon"><i class="fa-solid fa-sliders"></i></div>
+                            <div class="value-text">
+                                <h4>Custom Engineering Designs</h4>
+                                <p>No two roofs are the same. We custom design panel layouts and mounts to maximize sunlight exposure and aesthetics.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-card card glass-card reveal">
+                            <div class="value-icon"><i class="fa-solid fa-network-wired"></i></div>
+                            <div class="value-text">
+                                <h4>Hassle-Free Grid Integration</h4>
+                                <p>We take complete charge of net-metering setup and local electricity board (EB) approvals to feed excess power back to the grid smoothly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions / Services Section -->
+        <section class="solutions section bg-alt" id="solutions">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Our Services</span>
+                    <h2 class="section-title">End-to-End Solar Solutions</h2>
+                    <p class="section-desc">From cozy residential rooftops to massive industrial manufacturing plants, we design solar architectures that fit your power profile.</p>
+                </div>
+                
+                <div class="solutions-grid">
+                    <div class="solution-card card glass-card reveal">
+                        <div class="solution-icon"><i class="fa-solid fa-house-chimney"></i></div>
+                        <h3>Residential Solar Systems</h3>
+                        <p>Turn your home into a self-sustaining power plant. Significantly lower your monthly electricity bill, protect appliances from spikes, and increase property value.</p>
+                        <ul class="solution-list">
+                            <li><i class="fa-solid fa-check text-emerald"></i> Hybrid or On-grid solutions</li>
+                            <li><i class="fa-solid fa-check text-emerald"></i> Net-metering configuration</li>
+                            <li><i class="fa-solid fa-check text-emerald"></i> Sleek rooftop mounts</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solution-card card glass-card reveal">
+                        <div class="solution-icon"><i class="fa-solid fa-industry"></i></div>
+                        <h3>Commercial & Industrial</h3>
+                        <p>Slash operational overhead for your offices, factories, or warehouses. Leverage solar depreciation tax benefits and secure predictable long-term utility rates.</p>
+                        <ul class="solution-list">
+                            <li><i class="fa-solid fa-check text-emerald"></i> High-wattage bifacial systems</li>
+                            <li><i class="fa-solid fa-check text-emerald"></i> Structural load calculations</li>
+                            <li><i class="fa-solid fa-check text-emerald"></i> Rapid payback models</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solution-card card glass-card reveal">
+                        <div class="solution-icon"><i class="fa-solid fa-battery-three-quarters"></i></div>
+                        <h3>Smart Energy Storage</h3>
+                        <p>Never experience blackouts. Integrate premium Lithium Iron Phosphate (LiFePO4) storage batteries to store surplus midday energy for overnight utility.</p>
+                        <ul class="solution-list">
+                            <li><i class="fa-solid fa-check text-emerald"></i> 24/7 Backup power continuity</li>
+                            <li><i class="fa-solid fa-check text-emerald"></i> Smart battery management</li>
+                            <li><i class="fa-solid fa-check text-emerald"></i> Modular, expandable capacities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solution-card card glass-card reveal">
+                        <div class="solution-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Maintenance & Auditing</h3>
+                        <p>Keep your solar array running at peak efficiency. We offer professional pressure cleaning, electrical testing, and infrared thermal imaging surveys.</p>
+                        <ul class="solution-list">
+                            <li><i class="fa-solid fa-check text-emerald"></i> Periodic panel cleaning & wash</li>
+                            <li><i class="fa-solid fa-check text-emerald"></i> Thermal hot-spot detection</li>
+                            <li><i class="fa-solid fa-check text-emerald"></i> System health checkups</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Solar Savings Calculator Section -->
+        <section class="calculator section" id="calculator">
+            <div class="calc-bg-glow"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Savings Estimator</span>
+                    <h2 class="section-title">Calculate Your Solar Potential</h2>
+                    <p class="section-desc">Estimate your custom system size, monthly savings, and payback period within seconds. Adjust the slider to see calculations update in real-time.</p>
+                </div>
+                
+                <div class="calculator-grid">
+                    <!-- Calculator Inputs -->
+                    <div class="calc-input-block card glass-card reveal">
+                        <h3>Input Your Details</h3>
+                        <div class="form-group">
+                            <label for="monthly-bill">Average Monthly Electricity Bill (INR)</label>
+                            <div class="bill-slider-container">
+                                <span class="slider-val-display" id="bill-display">₹5,000</span>
+                                <input type="range" id="monthly-bill" min="1000" max="50000" step="500" value="5000" class="custom-slider">
+                                <div class="slider-labels">
+                                    <span>₹1,000</span>
+                                    <span>₹25,000</span>
+                                    <span>₹50,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Property Type</label>
+                            <div class="property-toggle-btn-group">
+                                <button type="button" class="prop-btn active" data-type="residential"><i class="fa-solid fa-house"></i> Residential</button>
+                                <button type="button" class="prop-btn" data-type="commercial"><i class="fa-solid fa-building"></i> Commercial</button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="solar-exposure">Rooftop Sunlight Exposure</label>
+                            <select id="solar-exposure" class="custom-select">
+                                <option value="1.0">Optimal (Unshaded / All Day)</option>
+                                <option value="0.85" selected>Partial Shade (Good)</option>
+                                <option value="0.70">High Shade (Needs Assessment)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="calc-tips">
+                            <span class="tip-icon"><i class="fa-solid fa-lightbulb"></i></span>
+                            <p class="tip-text">Jeyar Brightech installations routinely save residential clients up to 90% on their electrical utility expenses.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Calculator Outputs -->
+                    <div class="calc-result-block card glass-card reveal">
+                        <h3>Your Solar Estimate</h3>
+                        
+                        <div class="results-grid">
+                            <div class="result-tile">
+                                <span class="result-icon"><i class="fa-solid fa-solar-panel"></i></span>
+                                <div>
+                                    <span class="result-label">Recommended System</span>
+                                    <span class="result-value" id="res-system-size">4.0 kWp</span>
+                                </div>
+                            </div>
+                            
+                            <div class="result-tile">
+                                <span class="result-icon"><i class="fa-solid fa-sack-dollar"></i></span>
+                                <div>
+                                    <span class="result-label">Est. Monthly Savings</span>
+                                    <span class="result-value text-emerald" id="res-monthly-savings">₹4,250</span>
+                                </div>
+                            </div>
+                            
+                            <div class="result-tile">
+                                <span class="result-icon"><i class="fa-solid fa-arrows-up-to-line"></i></span>
+                                <div>
+                                    <span class="result-label">Required Roof Space</span>
+                                    <span class="result-value" id="res-roof-space">400 sq. ft.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="result-tile">
+                                <span class="result-icon"><i class="fa-solid fa-rotate-left"></i></span>
+                                <div>
+                                    <span class="result-label">Estimated Payback ROI</span>
+                                    <span class="result-value" id="res-payback">4.2 Years</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="eco-impact-box">
+                            <h4>Annual Carbon Footprint Impact</h4>
+                            <div class="eco-stats">
+                                <div class="eco-stat">
+                                    <span class="eco-icon"><i class="fa-solid fa-tree"></i></span>
+                                    <div>
+                                        <span class="eco-val" id="res-trees">98</span>
+                                        <span class="eco-lbl">Trees Planted / Yr</span>
+                                    </div>
+                                </div>
+                                <div class="eco-stat">
+                                    <span class="eco-icon"><i class="fa-solid fa-car-side"></i></span>
+                                    <div>
+                                        <span class="eco-val" id="res-co2">2.4 Tons</span>
+                                        <span class="eco-lbl">CO2 Emissions Saved</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-primary btn-block text-center"><i class="fa-solid fa-circle-check"></i> Lock in this Solar Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase Section -->
+        <section class="products section bg-alt" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Our Hardware</span>
+                    <h2 class="section-title">State-of-the-Art Solar Components</h2>
+                    <p class="section-desc">We collaborate exclusively with industry-validated tier 1 manufacturers to secure durable components for Jeyar Brightech installations.</p>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card card glass-card reveal">
+                        <div class="product-tag">Best Seller</div>
+                        <div class="product-img-placeholder">
+                            <img src="assets/solar_panel_villa.png" alt="Monocrystalline Half-Cut Panels" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Photovoltaic Modules</span>
+                            <h3>Monocrystalline Half-Cut Panels</h3>
+                            <p>Featuring multi-busbar technology and bifacial panels that capture light from both sides, pushing efficiency up to 22.8%.</p>
+                            <div class="product-specs">
+                                <span><i class="fa-solid fa-bolt"></i> 550Wp+ Output</span>
+                                <span><i class="fa-solid fa-shield"></i> 25Yr Warranty</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card card glass-card reveal">
+                        <div class="product-img-placeholder">
+                            <img src="assets/smart_inverter.png" alt="Smart Hybrid Inverters" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Power Conversion</span>
+                            <h3>Smart Hybrid Inverters</h3>
+                            <p>State-of-the-art dual MPPT grid-tied inverters equipped with integrated Wi-Fi and Bluetooth cloud reporting utilities.</p>
+                            <div class="product-specs">
+                                <span><i class="fa-solid fa-percent"></i> 98.4% Efficiency</span>
+                                <span><i class="fa-solid fa-wifi"></i> IoT App Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card card glass-card reveal">
+                        <div class="product-img-placeholder">
+                            <img src="assets/lithium_battery.png" alt="LiFePO4 Modular Batteries" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Energy Storage</span>
+                            <h3>LiFePO4 Modular Batteries</h3>
+                            <p>Premium safe Lithium Iron Phosphate batteries engineered with deep-cycle capabilities and active cell-balancing safety BMS.</p>
+                            <div class="product-specs">
+                                <span><i class="fa-solid fa-arrows-spin"></i> 6000+ Cycles</span>
+                                <span><i class="fa-solid fa-cubes"></i> Expandable stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Common Inquiries</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-desc">Got questions about grid synchronization, battery backup, or structural installations? We have answers.</p>
+                </div>
+                
+                <div class="faq-accordion-list">
+                    <div class="faq-item card glass-card reveal">
+                        <button class="faq-question">
+                            <span>How long does the physical solar panel installation take?</span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For standard residential structures (3kW to 10kW), the physical installation of structural frames, wiring, and panel arrays takes 1 to 2 days. The net-metering approval and solar integration with the local electric board (EB) may take an additional 10 to 15 days depending on local regulatory processing timelines.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item card glass-card reveal">
+                        <button class="faq-question">
+                            <span>Will solar panels work on rainy or overcast days?</span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, solar panels still generate power under cloudy, overcast, or rainy skies, as they utilize ambient daylight rather than just direct sunlight. Output will drop to about 10% to 25% of their sunny-day peak capacity. For backup, we offer hybrid inverter configurations tied to modular lithium energy storage.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item card glass-card reveal">
+                        <button class="faq-question">
+                            <span>What maintenance is required for a rooftop solar system?</span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Solar arrays require very low maintenance. The primary task is keeping panels clean from heavy dust, bird droppings, or foliage. We recommend a gentle rinse and wiping down every 2 to 4 weeks. Jeyar Brightech also offers annual maintenance contracts (AMCs) which include structural inspections, string checks, and infrared thermal imaging audits.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item card glass-card reveal">
+                        <button class="faq-question">
+                            <span>How does grid net-metering benefit my bill?</span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Net-metering measures the bidirectional flow of electricity. When your panels produce excess power during midday peak sun, the surplus electricity feeds back into the local grid. Your utility meter runs backward, earning you energy credits that offset any power you pull from the grid during nighttime hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section bg-alt" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Schedule Your Free Site Audit</h2>
+                    <p class="section-desc">Our team will run a structural survey, shade calculation, and design a custom blueprint with Mr. Santhosh Kumar J. R. overseeing the proposal.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Information Cards -->
+                    <div class="contact-info-block">
+                        <div class="info-card card glass-card reveal">
+                            <div class="info-icon"><i class="fa-solid fa-user-check"></i></div>
+                            <div>
+                                <h4>Key Administrator</h4>
+                                <p class="text-white">Mr. Santhosh Kumar J. R. (Founder)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card card glass-card reveal">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p><a href="mailto:info@jeyarbrightech.com">info@jeyarbrightech.com</a></p>
+                                <p><a href="mailto:santhosh@jeyarbrightech.com">santhosh@jeyarbrightech.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card card glass-card reveal">
+                            <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div>
+                                <h4>Phone / Whatsapp</h4>
+                                <p><a href="tel:+919876543210">+91 98765 43210</a> (Direct Support)</p>
+                                <p><a href="https://wa.me/919876543210" target="_blank" class="whatsapp-link"><i class="fa-brands fa-whatsapp text-emerald"></i> Click to Chat on WhatsApp</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card card glass-card reveal">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Corporate Headquarters</h4>
+                                <p class="text-white">Jeyar Brightech Solar Systems,<br>Chennai, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-block card glass-card reveal">
+                        <h3>Send a Message</h3>
+                        <form id="solar-contact-form" autocomplete="on">
+                            <div class="form-row">
+                                <div class="form-group flex-1">
+                                    <label for="contact-name">Your Full Name *</label>
+                                    <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group flex-1">
+                                    <label for="contact-phone">Phone Number *</label>
+                                    <input type="tel" id="contact-phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                    <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group flex-1">
+                                    <label for="contact-type">Connection Scope</label>
+                                    <select id="contact-type" name="type" class="custom-select">
+                                        <option value="residential">Residential Installation</option>
+                                        <option value="commercial">Commercial Scale Solar</option>
+                                        <option value="maintenance">Maintenance/AMC audit</option>
+                                        <option value="other">General Consultation</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1">
+                                    <label for="contact-bill">Avg. Monthly Bill Range</label>
+                                    <select id="contact-bill" name="bill" class="custom-select">
+                                        <option value="under5k">Below ₹5,000 / month</option>
+                                        <option value="5kto15k">₹5,000 - ₹15,000 / month</option>
+                                        <option value="15kto30k">₹15,000 - ₹30,000 / month</option>
+                                        <option value="over30k">Above ₹30,000 / month</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-msg">Project Description / Message</label>
+                                <textarea id="contact-msg" name="message" rows="4" placeholder="Mention rooftop space details, power issues, or specific questions..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span id="submit-btn-text"><i class="fa-solid fa-paper-plane"></i> Send Request</span>
+                                <span class="loader hidden" id="submit-loader"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-solar-panel"></i></span>
+                    <span class="logo-text">Jeyar <span class="highlight">Brightech</span></span>
+                </a>
+                <p>Advanced commercial and residential solar installation services. We engineer high-efficiency photovoltaic systems designed to provide energy independence.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#calculator">Solar Calculator</a></li>
+                    <li><a href="#products">Products</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Our Offerings</h4>
+                <ul class="footer-links">
+                    <li><a href="#solutions">Rooftop Solar</a></li>
+                    <li><a href="#solutions">Commercial Systems</a></li>
+                    <li><a href="#solutions">Off-Grid Battery Storage</a></li>
+                    <li><a href="#solutions">Thermal Maintenance Auditing</a></li>
+                    <li><a href="#contact">Site Assessment</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Jeyar Brightech Solar Systems. All Rights Reserved.</p>
+                <p>Supervised by Mr. Santhosh Kumar J. R.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container for Notifications -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
