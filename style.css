@@ -6,68 +6,68 @@
 
 /* --- Custom Variables & Theme Tokens --- */
 :root {
-    /* Dark Mode (Default) Variables */
-    --bg-primary: #030712;
-    --bg-secondary: #0b0f19;
-    --bg-card: rgba(17, 24, 39, 0.7);
-    --bg-card-hover: rgba(31, 41, 55, 0.85);
-    --text-primary: #f9fafb;
-    --text-secondary: #9ca3af;
-    --text-muted: #6b7280;
+    /* Dark Mode (Default) Variables - Weather Indigo Theme */
+    --bg-primary: #040815;
+    --bg-secondary: #081026;
+    --bg-card: rgba(15, 23, 42, 0.45);
+    --bg-card-hover: rgba(15, 23, 42, 0.65);
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #64748b;
     
     --accent-emerald: #10b981;
     --accent-emerald-rgb: 16, 185, 129;
     --accent-amber: #f59e0b;
     --accent-amber-rgb: 245, 158, 11;
-    --accent-glow: rgba(16, 185, 129, 0.15);
+    --accent-glow: rgba(56, 189, 248, 0.12);
     
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(16, 185, 129, 0.3);
+    --border-color: rgba(56, 189, 248, 0.12);
+    --border-hover: rgba(56, 189, 248, 0.35);
     
-    --glass-blur: blur(16px) saturate(120%);
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
-    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.6);
-    --shadow-glow: 0 0 25px rgba(16, 185, 129, 0.25);
+    --glass-blur: blur(20px) saturate(140%);
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 12px 40px rgba(0, 0, 0, 0.35);
+    --shadow-glow: 0 0 30px rgba(56, 189, 248, 0.2);
     
     --transition-speed: 0.3s;
     --transition-elastic: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+    /* Scene Variables - Dark Mode */
+    --scene-sky-bg: linear-gradient(to bottom, #020617 0%, #0f172a 60%, #1e293b 100%);
+    --stars-opacity: 0.8;
+    --sun-opacity: 0;
+    --sun-translate: translateY(-80px);
+    --moon-opacity: 1;
+    --moon-translate: translateY(0);
+    --sea-color: #111827;
+    --hill-color: #064e3b;
 }
 
 [data-theme="light"] {
-    /* Light Mode Variables */
-    --bg-primary: #f8fafc;
-    --bg-secondary: #f1f5f9;
-    --bg-card: rgba(255, 255, 255, 0.8);
-    --bg-card-hover: rgba(255, 255, 255, 0.95);
+    /* Light Mode Variables - Weather Sky Blue Theme */
+    --bg-primary: #f0f9ff;
+    --bg-secondary: #e0f2fe;
+    --bg-card: rgba(224, 242, 254, 0.45);
+    --bg-card-hover: rgba(224, 242, 254, 0.65);
     --text-primary: #0f172a;
-    --text-secondary: #475569;
+    --text-secondary: #334155;
     --text-muted: #64748b;
     
     --accent-emerald: #059669;
     --accent-emerald-rgb: 5, 150, 105;
     --accent-amber: #d97706;
     --accent-amber-rgb: 217, 119, 6;
-    --accent-glow: rgba(5, 150, 105, 0.08);
+    --accent-glow: rgba(14, 165, 233, 0.08);
     
-    --border-color: rgba(15, 23, 42, 0.08);
-    --border-hover: rgba(5, 150, 105, 0.4);
+    --border-color: rgba(2, 132, 199, 0.12);
+    --border-hover: rgba(2, 132, 199, 0.35);
     
-    --glass-blur: blur(16px) saturate(110%);
-    --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
-    --shadow-md: 0 8px 30px rgba(15, 23, 42, 0.08);
-    --shadow-glow: 0 10px 25px rgba(5, 150, 105, 0.15);
-}
+    --glass-blur: blur(20px) saturate(130%);
+    --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.03);
+    --shadow-md: 0 12px 40px rgba(15, 23, 42, 0.06);
+    --shadow-glow: 0 10px 25px rgba(2, 132, 199, 0.15);
 
-/* --- Base Settings & Resets --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Offset for sticky header */
+    /* Scene Variables - Light Mode */
     --scene-sky-bg: linear-gradient(to bottom, #38bdf8 0%, #bae6fd 60%, #e0f2fe 100%);
     --stars-opacity: 0;
     --sun-opacity: 1;
@@ -386,29 +386,32 @@ img {
 
 /* --- Hero Section --- */
 .hero {
-    min-height: 95vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 140px;
-    padding-bottom: 120px;
     position: relative;
     overflow: hidden;
-    background-image: var(--hero-bg);
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    transition: background-image 0.8s ease-in-out, background-color 0.8s ease-in-out;
+}
+
+.hero-bg-glow {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
 }
 
 .hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
     gap: 2rem;
+    align-items: center;
     position: relative;
-    z-index: 5;
-    flex-wrap: wrap;
-    width: 100%;
+    z-index: 1;
 }
 
 .hero-content {
@@ -1832,9 +1835,6 @@ img {
 }
 
 .map-container iframe {
-}
-
-.map-container iframe {
     width: 100%;
     height: 100%;
     border: none;
@@ -1842,6 +1842,9 @@ img {
 
 /* --- About Highlights Row (Single Row Layout) --- */
 .about-highlights-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
     margin-top: 1.5rem;
 }
 

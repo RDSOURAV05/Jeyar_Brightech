@@ -134,34 +134,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const treesEl = document.getElementById('res-trees');
     const co2El = document.getElementById('res-co2');
 
-    // Dynamic package recommendation DOM nodes
-    const recPackageName = document.getElementById('rec-package-name');
-    const recPackageDesc = document.getElementById('rec-package-desc');
-    const recPackageYield = document.getElementById('rec-package-yield');
-    const recPackageWarranty = document.getElementById('rec-package-warranty');
-
     // Handle inputs changes
-    if (monthlyBillInput) {
-        monthlyBillInput.addEventListener('input', (e) => {
-            const value = parseInt(e.target.value, 10);
-            billDisplay.textContent = `₹${value.toLocaleString('en-IN')}`;
-            calculateSolarPotential();
-        });
-    }
+    monthlyBillInput.addEventListener('input', (e) => {
+        const value = parseInt(e.target.value, 10);
+        billDisplay.textContent = `₹${value.toLocaleString('en-IN')}`;
+        calculateSolarPotential();
+    });
 
-    if (exposureSelect) {
-        exposureSelect.addEventListener('change', calculateSolarPotential);
-    }
+    exposureSelect.addEventListener('change', calculateSolarPotential);
 
     // Initial run
     calculateSolarPotential();
 
     function calculateSolarPotential() {
-        if (!monthlyBillInput || !exposureSelect) return;
-
         const monthlyBill = parseInt(monthlyBillInput.value, 10);
         const exposureMultiplier = parseFloat(exposureSelect.value);
         
+        /* Calculations logic:
+           - Average Cost per Unit: ₹7.5 (Residential)
+           - 1 kWp Solar panel array produces ~120 kWh per month under optimal conditions.
+           - Cost of installation: approx ₹60,000 per kW (Residential).
+        */
         const unitRate = 7.5;
         const estUnitsConsumed = monthlyBill / unitRate;
         
@@ -193,50 +186,17 @@ document.addEventListener('DOMContentLoaded', () => {
         paybackPeriod = Math.max(3.0, Math.min(10.0, paybackPeriod)); // bounds
         paybackPeriod = Math.round(paybackPeriod * 10) / 10; // 1 decimal place
 
+        // Eco-Impact: 1 kWp offsets approx 1.2 Tons CO2 per year
+        const annualCo2Saved = neededSystemSize * 1.2 * exposureMultiplier;
+        const treesPlantedEquivalent = Math.round(annualCo2Saved * 40); // 1 Ton CO2 ~40 trees offset
+
         // Render values to UI
-        if (systemSizeEl) systemSizeEl.textContent = `${neededSystemSize.toFixed(1)} kWp`;
-        if (savingsEl) savingsEl.textContent = `₹${monthlySavings.toLocaleString('en-IN')}`;
-        if (spaceEl) spaceEl.textContent = `${roofSpaceNeeded} sq. ft.`;
-        if (paybackEl) paybackEl.textContent = `${paybackPeriod.toFixed(1)} Years`;
-
-        // Dynamic package update logic
-        if (recPackageName && recPackageDesc && recPackageYield && recPackageWarranty) {
-            if (neededSystemSize <= 3.4) {
-                recPackageName.textContent = '3 kW Solar Plant';
-                recPackageDesc.textContent = 'Perfect for small to medium households. Ideal for offsetting power bills of standard appliances, lighting, fans, and a single air conditioner.';
-                recPackageYield.textContent = '12–15 Units';
-                recPackageWarranty.textContent = '30 Years';
-            } else if (neededSystemSize <= 5.9) {
-                recPackageName.textContent = '5 kW Solar Plant';
-                recPackageDesc.textContent = 'Our most popular option for average Indian families. Easily offsets consumption from multiple ACs, refrigerators, and water pumps.';
-                recPackageYield.textContent = '20–25 Units';
-                recPackageWarranty.textContent = '30 Years';
-            } else if (neededSystemSize <= 8.9) {
-                recPackageName.textContent = '8 kW Solar Plant';
-                recPackageDesc.textContent = 'Designed for large residential spaces or multi-family properties. Supports heavy electrical loads, EV chargers, and multiple HVAC units.';
-                recPackageYield.textContent = '32–40 Units';
-                recPackageWarranty.textContent = '30 Years';
-            } else {
-                recPackageName.textContent = '10 kW Solar Plant';
-                recPackageDesc.textContent = 'Maximum domestic capacity. Provides total energy independence and protection against utility tariffs for large homes with luxury setups.';
-                recPackageYield.textContent = '40–50 Units';
-                recPackageWarranty.textContent = '30 Years';
-            }
-        }
-    }
-
-    // Toggle collapsible spec sheet
-    const toggleSpecBtn = document.getElementById('toggle-spec-btn');
-    const collapsibleSpecs = document.getElementById('collapsible-specs');
-    if (toggleSpecBtn && collapsibleSpecs) {
-        toggleSpecBtn.addEventListener('click', () => {
-            collapsibleSpecs.classList.toggle('hidden');
-            if (collapsibleSpecs.classList.contains('hidden')) {
-                toggleSpecBtn.innerHTML = '<i class="fa-solid fa-table"></i> View Spec Sheet';
-            } else {
-                toggleSpecBtn.innerHTML = '<i class="fa-solid fa-chevron-up"></i> Hide Spec Sheet';
-            }
-        });
+        systemSizeEl.textContent = `${neededSystemSize.toFixed(1)} kWp`;
+        savingsEl.textContent = `₹${monthlySavings.toLocaleString('en-IN')}`;
+        spaceEl.textContent = `${roofSpaceNeeded} sq. ft.`;
+        paybackEl.textContent = `${paybackPeriod.toFixed(1)} Years`;
+        treesEl.textContent = treesPlantedEquivalent;
+        co2El.textContent = `${annualCo2Saved.toFixed(1)} Tons`;
     }
 
 
