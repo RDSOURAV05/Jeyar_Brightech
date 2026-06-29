@@ -1687,6 +1687,139 @@ img {
     }
 }
 
+/* --- Featured Package Specifications Table --- */
+.spec-table-container {
+    overflow-x: auto;
+    margin-top: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background: var(--bg-card);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    font-size: 0.95rem;
+}
+
+.spec-table th, .spec-table td {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.spec-table th {
+    background-color: rgba(var(--accent-emerald-rgb), 0.06);
+    font-weight: 700;
+    color: var(--accent-emerald);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.spec-table tr:last-child td {
+    border-bottom: none;
+}
+
+.spec-table tr:hover td {
+    background-color: rgba(255, 255, 255, 0.015);
+}
+
+/* --- 5-Step Process Layout --- */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.process-step {
+    text-align: center;
+    position: relative;
+    padding: 2rem 1.5rem;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-emerald) 0%, var(--accent-amber) 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0 4px 15px rgba(var(--accent-emerald-rgb), 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.process-step h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.process-step p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Additional Services list styles */
+.additional-services-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.service-tag {
+    padding: 0.6rem 1.25rem;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all var(--transition-speed) ease;
+}
+
+.service-tag:hover {
+    border-color: var(--accent-emerald);
+    color: var(--text-primary);
+    background-color: rgba(var(--accent-emerald-rgb), 0.05);
+    transform: translateY(-2px);
+}
+
+.service-tag i {
+    color: var(--accent-emerald);
+}
+
+/* Google Maps container styling */
+.map-container {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    margin-top: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* --- Custom Active Solar Cursor --- */
 html:active, html:active * {
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='%2310b981' stroke='%23020617' stroke-width='1.5'%3E%3Crect x='3' y='3' width='18' height='18' rx='2' fill='%231e293b'/%3E%3Cline x1='12' y1='3' x2='12' y2='21' stroke='%2310b981' stroke-width='1.5'/%3E%3Cline x1='3' y1='12' x2='21' y2='12' stroke='%2310b981' stroke-width='1.5'/%3E%3Cline x1='3' y1='7' x2='21' y2='7' stroke='%2310b981' stroke-width='1.5'/%3E%3Cline x1='3' y1='17' x2='21' y2='17' stroke='%2310b981' stroke-width='1.5'/%3E%3C/svg%3E") 16 16, auto !important;

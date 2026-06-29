@@ -256,8 +256,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = document.getElementById('contact-name').value.trim();
         const phone = document.getElementById('contact-phone').value.trim();
         const email = document.getElementById('contact-email').value.trim();
+        const address = document.getElementById('contact-address').value.trim();
 
-        if (!name || !phone || !email) {
+        if (!name || !phone || !email || !address) {
             showToast('Please fill in all required fields.', 'error');
             return;
         }
