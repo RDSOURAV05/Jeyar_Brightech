@@ -82,17 +82,69 @@
                 </div>
                 
                 <div class="hero-graphics animate-fade-in">
-                    <div class="hero-card glass-card">
-                        <div class="solar-panel-graphic">
-                            <div class="grid-line horizontal"></div>
-                            <div class="grid-line horizontal"></div>
-                            <div class="grid-line horizontal"></div>
-                            <div class="grid-line vertical"></div>
-                            <div class="grid-line vertical"></div>
-                            <div class="grid-line vertical"></div>
-                            <div class="sun-glow"></div>
+                    <div class="hero-card glass-card" style="padding: 0; overflow: hidden; height: 400px; display: flex; flex-direction: column;">
+                        <!-- The Weather Theme Scene -->
+                        <div class="theme-scene" style="flex: 1; position: relative; overflow: hidden; background: var(--scene-sky-bg); transition: background 1s ease;">
+                            <!-- Starry background (only visible in dark mode) -->
+                            <div class="scene-stars"></div>
+                            
+                            <!-- Sun (Light Mode) -->
+                            <div class="scene-sun-container">
+                                <svg class="scene-sun" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                                    <circle cx="50" cy="50" r="28" fill="#f59e0b" />
+                                    <circle cx="50" cy="50" r="38" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4" class="sun-rays" />
+                                </svg>
+                            </div>
+                            
+                            <!-- Moon (Dark Mode) -->
+                            <div class="scene-moon-container">
+                                <svg class="scene-moon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                                    <path d="M50 20 A30 30 0 1 0 80 50 A22 22 0 1 1 50 20 Z" fill="#e2e8f0" />
+                                </svg>
+                            </div>
+
+                            <!-- Sea Horizon -->
+                            <div class="scene-sea"></div>
+                            
+                            <!-- Grassy Hill -->
+                            <div class="scene-hill"></div>
+                            
+                            <!-- The Boy -->
+                            <div class="scene-boy-wrapper">
+                                <svg class="scene-boy" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Boy Cap (backward cap, blue) -->
+                                    <path d="M 45 25 C 45 20, 55 20, 55 25 Z" fill="#2563eb" />
+                                    <path d="M 47 23 C 47 23, 40 24, 37 26 Z" fill="#1d4ed8" /> <!-- visor -->
+                                    
+                                    <!-- Head -->
+                                    <circle cx="50" cy="29" r="6" fill="#fdba74" />
+                                    
+                                    <!-- Neck -->
+                                    <rect x="49" y="34" width="2" height="4" fill="#fdba74" />
+                                    
+                                    <!-- Shirt (Yellow/Orange) -->
+                                    <path d="M 43 38 L 57 38 L 58 54 L 52 57 L 48 57 L 42 54 Z" fill="#f59e0b" />
+                                    <path d="M 43 38 L 39 45 L 43 47 Z" fill="#f59e0b" /> <!-- sleeve L -->
+                                    <path d="M 57 38 L 61 45 L 57 47 Z" fill="#d97706" /> <!-- sleeve R -->
+                                    
+                                    <!-- Arms -->
+                                    <path d="M 40 46 L 39 53 L 41 54 L 42 47 Z" fill="#fdba74" />
+                                    <path d="M 60 46 L 61 53 L 59 54 L 58 47 Z" fill="#fdba74" />
+                                    
+                                    <!-- Shorts (Teal/Blue) -->
+                                    <path d="M 44 54 L 56 54 L 57 72 L 51 72 L 50 62 L 49 72 L 43 72 Z" fill="#0891b2" />
+                                    
+                                    <!-- Legs -->
+                                    <rect x="46" y="72" width="2.5" height="12" fill="#fdba74" />
+                                    <rect x="51.5" y="72" width="2.5" height="12" fill="#fdba74" />
+                                    
+                                    <!-- Shoes -->
+                                    <path d="M 46 84 L 43 86 L 48 86 Z" fill="#1e293b" />
+                                    <path d="M 51.5 84 L 54.5 86 L 50 86 Z" fill="#1e293b" />
+                                </svg>
+                            </div>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer" style="padding: 1.25rem 2rem; background: var(--bg-card); border-top: 1px solid var(--border-color);">
                             <div class="stat-item">
                                 <span class="stat-number" data-target="1200">0</span><span class="stat-plus">kW+</span>
                                 <span class="stat-label">Installed Capacity</span>
