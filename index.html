@@ -59,114 +59,92 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
-            <div class="hero-bg-glow"></div>
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <div class="badge animate-fade-in">
-                        <span class="badge-icon"><i class="fa-solid fa-circle-check"></i></span>
-                        <span>"Powering Homes with Clean, Affordable Solar Energy."</span>
+            <!-- Weather Landscape Background Elements -->
+            <div class="hero-stars"></div>
+            
+            <div class="hero-sun-container">
+                <svg class="scene-sun" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                    <circle cx="50" cy="50" r="28" fill="#f59e0b" />
+                    <circle cx="50" cy="50" r="38" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4" class="sun-rays" />
+                </svg>
+            </div>
+            
+            <div class="hero-moon-container">
+                <svg class="scene-moon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                    <path d="M50 20 A30 30 0 1 0 80 50 A22 22 0 1 1 50 20 Z" fill="#e2e8f0" />
+                </svg>
+            </div>
+
+            <div class="hero-sea"></div>
+            <div class="hero-hill"></div>
+            
+            <div class="hero-boy-container">
+                <svg class="scene-boy" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                    <!-- Boy Cap (backward cap, blue) -->
+                    <path d="M 45 25 C 45 20, 55 20, 55 25 Z" fill="#2563eb" />
+                    <path d="M 47 23 C 47 23, 40 24, 37 26 Z" fill="#1d4ed8" /> <!-- visor -->
+                    
+                    <!-- Head -->
+                    <circle cx="50" cy="29" r="6" fill="#fdba74" />
+                    
+                    <!-- Neck -->
+                    <rect x="49" y="34" width="2" height="4" fill="#fdba74" />
+                    
+                    <!-- Shirt (Yellow/Orange) -->
+                    <path d="M 43 38 L 57 38 L 58 54 L 52 57 L 48 57 L 42 54 Z" fill="#f59e0b" />
+                    <path d="M 43 38 L 39 45 L 43 47 Z" fill="#f59e0b" /> <!-- sleeve L -->
+                    <path d="M 57 38 L 61 45 L 57 47 Z" fill="#d97706" /> <!-- sleeve R -->
+                    
+                    <!-- Arms -->
+                    <path d="M 40 46 L 39 53 L 41 54 L 42 47 Z" fill="#fdba74" />
+                    <path d="M 60 46 L 61 53 L 59 54 L 58 47 Z" fill="#fdba74" />
+                    
+                    <!-- Shorts (Teal/Blue) -->
+                    <path d="M 44 54 L 56 54 L 57 72 L 51 72 L 50 62 L 49 72 L 43 72 Z" fill="#0891b2" />
+                    
+                    <!-- Legs -->
+                    <rect x="46" y="72" width="2.5" height="12" fill="#fdba74" />
+                    <rect x="51.5" y="72" width="2.5" height="12" fill="#fdba74" />
+                    
+                    <!-- Shoes -->
+                    <path d="M 46 84 L 43 86 L 48 86 Z" fill="#1e293b" />
+                    <path d="M 51.5 84 L 54.5 86 L 50 86 Z" fill="#1e293b" />
+                </svg>
+            </div>
+
+            <!-- Content Overlays -->
+            <div class="container hero-container" style="position: relative; z-index: 5;">
+                <div class="hero-content card glass-card reveal" style="padding: 2.5rem; max-width: 620px; box-shadow: var(--shadow-md); margin-bottom: 2rem;">
+                    <div class="badge animate-fade-in" style="margin-bottom: 1.5rem; background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.15);">
+                        <span class="badge-icon"><i class="fa-solid fa-circle-check text-emerald"></i></span>
+                        <span style="color: var(--text-primary); font-weight: 600;">"Powering Homes with Clean, Affordable Solar Energy."</span>
                     </div>
-                    <h1 class="hero-title animate-slide-up">
-                        Switch to Solar. <br><span class="gradient-text">Save More Every Day.</span>
+                    <h1 class="hero-title animate-slide-up" style="font-size: 2.75rem; line-height: 1.2; margin-bottom: 1.25rem; font-family: 'Plus Jakarta Sans', sans-serif;">
+                        Switch to Solar. <br><span class="gradient-text" style="background: linear-gradient(135deg, var(--accent-amber), var(--accent-emerald)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Save More Every Day.</span>
                     </h1>
-                    <p class="hero-subtitle animate-slide-up">
+                    <p class="hero-subtitle animate-slide-up" style="font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.5rem;">
                         Provide reliable rooftop solar solutions for homes across Thiruvananthapuram with government subsidies, affordable financing, and professional installation.
                     </p>
-                    <div class="owner-tag animate-slide-up">
-                        <span class="owner-badge"><i class="fa-solid fa-signature"></i> Led by Mr. Santhosh Kumar J. R.</span>
+                    <div class="owner-tag animate-slide-up" style="margin-bottom: 2rem;">
+                        <span class="owner-badge" style="background: rgba(var(--accent-emerald-rgb), 0.08); border: 1px solid rgba(var(--accent-emerald-rgb), 0.15); color: var(--text-primary); padding: 0.5rem 1rem; border-radius: 30px; font-size: 0.88rem; font-weight: 600;"><i class="fa-solid fa-signature text-emerald"></i> Led by Mr. Santhosh Kumar J. R.</span>
                     </div>
-                    <div class="hero-actions animate-slide-up">
-                        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Get Free Quote</a>
-                        <a href="https://wa.me/917306670442" target="_blank" class="btn btn-outline" style="border-color: #25d366; color: #25d366;"><i class="fa-brands fa-whatsapp"></i> Contact on WhatsApp</a>
+                    <div class="hero-actions animate-slide-up" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#contact" class="btn btn-primary" style="flex: 1; min-width: 160px; text-align: center;"><i class="fa-solid fa-calendar-check"></i> Get Free Quote</a>
+                        <a href="https://wa.me/917306670442" target="_blank" class="btn btn-outline" style="flex: 1; min-width: 180px; text-align: center; border-color: #25d366; color: #25d366; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Chat</a>
                     </div>
                 </div>
                 
-                <div class="hero-graphics animate-fade-in">
-                    <div class="hero-card glass-card" style="padding: 0; overflow: hidden; height: 400px; display: flex; flex-direction: column;">
-                        <!-- The Weather Theme Scene -->
-                        <div class="theme-scene" style="flex: 1; position: relative; overflow: hidden; background: var(--scene-sky-bg); transition: background 1s ease;">
-                            <!-- Starry background (only visible in dark mode) -->
-                            <div class="scene-stars"></div>
-                            
-                            <!-- Sun (Light Mode) -->
-                            <div class="scene-sun-container">
-                                <svg class="scene-sun" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                                    <circle cx="50" cy="50" r="28" fill="#f59e0b" />
-                                    <circle cx="50" cy="50" r="38" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4" class="sun-rays" />
-                                </svg>
-                            </div>
-                            
-                            <!-- Moon (Dark Mode) -->
-                            <div class="scene-moon-container">
-                                <svg class="scene-moon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                                    <path d="M50 20 A30 30 0 1 0 80 50 A22 22 0 1 1 50 20 Z" fill="#e2e8f0" />
-                                </svg>
-                            </div>
-
-                            <!-- Sea Horizon -->
-                            <div class="scene-sea"></div>
-                            
-                            <!-- Grassy Hill -->
-                            <div class="scene-hill"></div>
-                            
-                            <!-- The Boy -->
-                            <div class="scene-boy-wrapper">
-                                <svg class="scene-boy" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Boy Cap (backward cap, blue) -->
-                                    <path d="M 45 25 C 45 20, 55 20, 55 25 Z" fill="#2563eb" />
-                                    <path d="M 47 23 C 47 23, 40 24, 37 26 Z" fill="#1d4ed8" /> <!-- visor -->
-                                    
-                                    <!-- Head -->
-                                    <circle cx="50" cy="29" r="6" fill="#fdba74" />
-                                    
-                                    <!-- Neck -->
-                                    <rect x="49" y="34" width="2" height="4" fill="#fdba74" />
-                                    
-                                    <!-- Shirt (Yellow/Orange) -->
-                                    <path d="M 43 38 L 57 38 L 58 54 L 52 57 L 48 57 L 42 54 Z" fill="#f59e0b" />
-                                    <path d="M 43 38 L 39 45 L 43 47 Z" fill="#f59e0b" /> <!-- sleeve L -->
-                                    <path d="M 57 38 L 61 45 L 57 47 Z" fill="#d97706" /> <!-- sleeve R -->
-                                    
-                                    <!-- Arms -->
-                                    <path d="M 40 46 L 39 53 L 41 54 L 42 47 Z" fill="#fdba74" />
-                                    <path d="M 60 46 L 61 53 L 59 54 L 58 47 Z" fill="#fdba74" />
-                                    
-                                    <!-- Shorts (Teal/Blue) -->
-                                    <path d="M 44 54 L 56 54 L 57 72 L 51 72 L 50 62 L 49 72 L 43 72 Z" fill="#0891b2" />
-                                    
-                                    <!-- Legs -->
-                                    <rect x="46" y="72" width="2.5" height="12" fill="#fdba74" />
-                                    <rect x="51.5" y="72" width="2.5" height="12" fill="#fdba74" />
-                                    
-                                    <!-- Shoes -->
-                                    <path d="M 46 84 L 43 86 L 48 86 Z" fill="#1e293b" />
-                                    <path d="M 51.5 84 L 54.5 86 L 50 86 Z" fill="#1e293b" />
-                                </svg>
-                            </div>
+                <div class="hero-graphics animate-fade-in" style="z-index: 5;">
+                    <!-- Elegant Glass Floating Stats -->
+                    <div class="glass-card" style="padding: 1.5rem 2rem; box-shadow: var(--shadow-md); border-radius: 20px; backdrop-filter: var(--glass-blur); display: flex; gap: 3rem; align-items: center;">
+                        <div class="stat-item" style="text-align: center;">
+                            <span class="stat-number" data-target="1200" style="font-size: 2.25rem; font-weight: 800; color: var(--text-primary); display: inline-block;">0</span><span class="stat-plus" style="font-size: 1.5rem; font-weight: 800; color: var(--accent-emerald);">kW+</span>
+                            <span class="stat-label" style="display: block; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">Installed Capacity</span>
                         </div>
-                        <div class="card-footer" style="padding: 1.25rem 2rem; background: var(--bg-card); border-top: 1px solid var(--border-color);">
-                            <div class="stat-item">
-                                <span class="stat-number" data-target="1200">0</span><span class="stat-plus">kW+</span>
-                                <span class="stat-label">Installed Capacity</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number" data-target="300">0</span><span class="stat-plus">+</span>
-                                <span class="stat-label">Happy Clients</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-badge-float glass-card">
-                        <div class="badge-float-icon"><i class="fa-solid fa-bolt-lightning text-amber"></i></div>
-                        <div>
-                            <h4>Real-time Savings</h4>
-                            <p>Up to 90% Bill Reduction</p>
-                        </div>
-                    </div>
-                    <div class="hero-badge-float-2 glass-card">
-                        <div class="badge-float-icon"><i class="fa-solid fa-leaf text-emerald"></i></div>
-                        <div>
-                            <h4>Eco-Friendly</h4>
-                            <p>1500+ Tons CO2 Reduced</p>
+                        <div style="width: 1px; height: 40px; background-color: var(--border-color);"></div>
+                        <div class="stat-item" style="text-align: center;">
+                            <span class="stat-number" data-target="300" style="font-size: 2.25rem; font-weight: 800; color: var(--text-primary); display: inline-block;">0</span><span class="stat-plus" style="font-size: 1.5rem; font-weight: 800; color: var(--accent-emerald);">+</span>
+                            <span class="stat-label" style="display: block; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">Happy Clients</span>
                         </div>
                     </div>
                 </div>
