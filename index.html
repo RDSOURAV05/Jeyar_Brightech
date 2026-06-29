@@ -34,12 +34,9 @@
                 <ul class="nav-list">
                     <li><a href="#" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About Us</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="products.html" class="nav-link">Products</a></li>
-                    <li><a href="#package" class="nav-link">Featured Package</a></li>
-                    <li><a href="#benefits" class="nav-link">Benefits</a></li>
-                    <li><a href="#process" class="nav-link">Process</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#calculator" class="nav-link">Solar Estimator</a></li>
+                    <li><a href="#contact" class="nav-link">Contact & FAQ</a></li>
                 </ul>
             </nav>
 
@@ -60,62 +57,9 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
-            <!-- Weather Landscape Background Elements -->
-            <div class="hero-stars"></div>
-            
-            <div class="hero-sun-container">
-                <svg class="scene-sun" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                    <circle cx="50" cy="50" r="28" fill="#f59e0b" />
-                    <circle cx="50" cy="50" r="38" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4" class="sun-rays" />
-                </svg>
-            </div>
-            
-            <div class="hero-moon-container">
-                <svg class="scene-moon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                    <path d="M50 20 A30 30 0 1 0 80 50 A22 22 0 1 1 50 20 Z" fill="#e2e8f0" />
-                </svg>
-            </div>
-
-            <div class="hero-sea"></div>
-            <div class="hero-hill"></div>
-            
-            <div class="hero-boy-container">
-                <svg class="scene-boy" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                    <!-- Boy Cap (backward cap, blue) -->
-                    <path d="M 45 25 C 45 20, 55 20, 55 25 Z" fill="#2563eb" />
-                    <path d="M 47 23 C 47 23, 40 24, 37 26 Z" fill="#1d4ed8" /> <!-- visor -->
-                    
-                    <!-- Head -->
-                    <circle cx="50" cy="29" r="6" fill="#fdba74" />
-                    
-                    <!-- Neck -->
-                    <rect x="49" y="34" width="2" height="4" fill="#fdba74" />
-                    
-                    <!-- Shirt (Yellow/Orange) -->
-                    <path d="M 43 38 L 57 38 L 58 54 L 52 57 L 48 57 L 42 54 Z" fill="#f59e0b" />
-                    <path d="M 43 38 L 39 45 L 43 47 Z" fill="#f59e0b" /> <!-- sleeve L -->
-                    <path d="M 57 38 L 61 45 L 57 47 Z" fill="#d97706" /> <!-- sleeve R -->
-                    
-                    <!-- Arms -->
-                    <path d="M 40 46 L 39 53 L 41 54 L 42 47 Z" fill="#fdba74" />
-                    <path d="M 60 46 L 61 53 L 59 54 L 58 47 Z" fill="#fdba74" />
-                    
-                    <!-- Shorts (Teal/Blue) -->
-                    <path d="M 44 54 L 56 54 L 57 72 L 51 72 L 50 62 L 49 72 L 43 72 Z" fill="#0891b2" />
-                    
-                    <!-- Legs -->
-                    <rect x="46" y="72" width="2.5" height="12" fill="#fdba74" />
-                    <rect x="51.5" y="72" width="2.5" height="12" fill="#fdba74" />
-                    
-                    <!-- Shoes -->
-                    <path d="M 46 84 L 43 86 L 48 86 Z" fill="#1e293b" />
-                    <path d="M 51.5 84 L 54.5 86 L 50 86 Z" fill="#1e293b" />
-                </svg>
-            </div>
-
             <!-- Content Overlays -->
             <div class="container hero-container" style="position: relative; z-index: 5;">
-                <div class="hero-content card glass-card reveal" style="padding: 2.5rem; max-width: 620px; box-shadow: var(--shadow-md); margin-bottom: 2rem;">
+                <div class="hero-content card glass-card reveal" style="padding: 2.5rem; max-width: 620px; box-shadow: var(--shadow-md);">
                     <div class="badge animate-fade-in" style="margin-bottom: 1.5rem; background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.15);">
                         <span class="badge-icon"><i class="fa-solid fa-circle-check text-emerald"></i></span>
                         <span style="color: var(--text-primary); font-weight: 600;">"Powering Homes with Clean, Affordable Solar Energy."</span>
@@ -129,16 +73,14 @@
                     <div class="owner-tag animate-slide-up" style="margin-bottom: 2rem;">
                         <span class="owner-badge" style="background: rgba(var(--accent-emerald-rgb), 0.08); border: 1px solid rgba(var(--accent-emerald-rgb), 0.15); color: var(--text-primary); padding: 0.5rem 1rem; border-radius: 30px; font-size: 0.88rem; font-weight: 600;"><i class="fa-solid fa-signature text-emerald"></i> Led by Mr. Santhosh Kumar J. R.</span>
                     </div>
-                    <div class="hero-actions animate-slide-up" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="hero-actions animate-slide-up" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
                         <a href="#contact" class="btn btn-primary" style="flex: 1; min-width: 160px; text-align: center;"><i class="fa-solid fa-calendar-check"></i> Get Free Quote</a>
                         <a href="https://wa.me/917306670442" target="_blank" class="btn btn-outline" style="flex: 1; min-width: 180px; text-align: center; border-color: #25d366; color: #25d366; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Chat</a>
                     </div>
-                </div>
-                
-                <div class="hero-graphics animate-fade-in" style="z-index: 5;">
+                    
                     <!-- Elegant Glass Floating Stats -->
-                    <div class="glass-card" style="padding: 1.5rem 2rem; box-shadow: var(--shadow-md); border-radius: 20px; backdrop-filter: var(--glass-blur); display: flex; gap: 3rem; align-items: center;">
-                        <div class="stat-item" style="text-align: center;">
+                    <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-color); display: flex; gap: 3rem; align-items: center;">
+                        <div class="stat-item" style="text-align: left;">
                             <span class="stat-number" data-target="1200" style="font-size: 2.25rem; font-weight: 800; color: var(--text-primary); display: inline-block;">0</span><span class="stat-plus" style="font-size: 1.5rem; font-weight: 800; color: var(--accent-emerald);">kW+</span>
                             <span class="stat-label" style="display: block; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">Installed Capacity</span>
                         </div>
@@ -151,142 +93,119 @@
                 </div>
             </div>
             
-            <div class="scroll-indicator">
+            <div class="scroll-indicator" style="z-index: 5;">
                 <span>Scroll to explore</span>
-
-        <!-- Services Section -->
-        <section class="solutions section bg-alt" id="services">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Services</span>
-                    <h2 class="section-title">Our Residential Solar Offerings</h2>
-                    <p class="section-desc">We offer pre-configured, high-efficiency solar plants customized to match your home energy requirement profile.</p>
-                </div>
-                
-                <div class="solutions-grid">
-                    <!-- 3 kW Service Card -->
-                    <div class="solution-card card glass-card reveal">
-                        <div class="solution-icon"><i class="fa-solid fa-house-chimney"></i></div>
-                        <h3>3 kW Residential Solar Plant</h3>
-                        <p>Perfect for small to medium households. Ideal for offsetting power bills of standard appliances, lighting, fans, and a single air conditioner.</p>
-                        <ul class="solution-list">
-                            <li><i class="fa-solid fa-bolt text-emerald"></i> Ideal for bills around ₹2,000–₹4,000</li>
-                            <li><i class="fa-solid fa-check text-emerald"></i> Subsidy benefit eligible</li>
-                            <li><i class="fa-solid fa-check text-emerald"></i> Standard roof space required</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- 5 kW Service Card -->
-                    <div class="solution-card card glass-card reveal">
-                        <div class="solution-icon"><i class="fa-solid fa-house-flag"></i></div>
-                        <h3>5 kW Residential Solar Plant</h3>
-                        <p>Our most popular option for average Indian families. Easily offsets consumption from multiple ACs, refrigerators, and water pumps.</p>
-                        <ul class="solution-list">
-                            <li><i class="fa-solid fa-bolt text-emerald"></i> Ideal for bills around ₹4,000–₹7,000</li>
-                            <li><i class="fa-solid fa-check text-emerald"></i> Average 20–25 Units daily yield</li>
-                    <span class="section-subtitle">Our Services</span>
-                    <h2 class="section-title">End-to-End Solar Solutions</h2>
-                    <p class="section-desc">From custom rooftop solar designs to smart battery storage integrations, we design residential solar solutions that fit your family's needs.</p>
-                </div>
-                
-                <div class="solutions-grid">
-                    <div class="solution-card card glass-card reveal">
-                        <div class="solution-icon"><i class="fa-solid fa-house-chimney"></i></div>
-                        <h3>Residential Solar Systems</h3>
-                        <p>Turn your home into a self-sustaining power plant. Significantly lower your monthly electricity bill, protect appliances from spikes, and increase property value.</p>
-                        <ul class="solution-list">
-                            <li><i class="fa-solid fa-check text-emerald"></i> Hybrid or On-grid solutions</li>
-                            <li><i class="fa-solid fa-check text-emerald"></i> Net-metering configuration</li>
-                            <li><i class="fa-solid fa-check text-emerald"></i> Sleek rooftop mounts</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="solution-card card glass-card reveal">
-                        <div class="solution-icon"><i class="fa-solid fa-network-wired"></i></div>
-                        <h3>Net-Metering Integration</h3>
-                        <p>Sell surplus midday power back to the grid. We manage all paperwork, governmental net-metering approvals, and bidirectional meter setups for your utility offset.</p>
-                        <ul class="solution-list">
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </div>
-
-                <!-- Additional Services Block -->
-                <div style="margin-top: 5rem;" class="reveal">
-                    <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem; text-align: center;">Additional Services</h3>
-                    <p style="color: var(--text-secondary); text-align: center; margin-bottom: 2rem;">We support your entire solar transition journey from beginning to end.</p>
-                    <div class="additional-services-tags" style="justify-content: center;">
-                        <span class="service-tag"><i class="fa-solid fa-tools"></i> Roof Enhancement (if required)</span>
-                        <span class="service-tag"><i class="fa-solid fa-circle-check"></i> Complete Installation</span>
-                        <span class="service-tag"><i class="fa-solid fa-hands-helping"></i> Government Subsidy Assistance</span>
-                        <span class="service-tag"><i class="fa-solid fa-comments"></i> Solar Consultation</span>
-                        <span class="service-tag"><i class="fa-solid fa-headset"></i> After-sales Support</span>
-                    </div>
-                </div>
+                <i class="fa-solid fa-chevron-down scroll-bounce"></i>
             </div>
         </section>
 
-        <!-- Interactive Solar Savings Calculator Section -->
-        <section class="calculator section" id="calculator">
-            <div class="calc-bg-glow"></div>
+        <!-- About Us Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 3rem;">
+                    <span class="section-subtitle">About JEYAR BRIGHTECH</span>
+                    <h2 class="section-title">Serving Customers Across Thiruvananthapuram</h2>
+                </div>
+                
+                <!-- Core Mission Text (Reduced Size & Centered) -->
+                <div class="card glass-card reveal" style="max-width: 800px; margin: 0 auto 3.5rem auto; padding: 2rem 2.5rem; text-align: center;">
+                    <p style="font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                        <strong>JEYAR BRIGHTECH</strong> is a residential solar installation company serving customers across <strong>Thiruvananthapuram</strong>. We provide high-quality rooftop solar systems with professional installation, government subsidy assistance, and after-sales support. Our mission is to help every household reduce electricity bills while contributing to a cleaner environment.
+                    </p>
+                    <div style="display: inline-flex; align-items: center; gap: 0.75rem; border-top: 1px solid var(--border-color); padding-top: 1rem; margin-top: 0.5rem;">
+                        <span style="font-size: 0.9rem; font-weight: 600; color: var(--text-primary);"><i class="fa-solid fa-user-tie text-emerald"></i> Mr. Santhosh Kumar J. R.</span>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Owner, Jeyar Brightech</span>
+                    </div>
+                </div>
+                
+                <!-- Highlights Row (One Specific Row) -->
+                <div class="about-highlights-row">
+                    <div class="value-card card glass-card reveal" style="padding: 1.5rem; flex-direction: column; align-items: center; text-align: center; gap: 0.75rem; display: flex; height: 100%;">
+                        <div class="value-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.1rem; flex-shrink: 0;"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                        <h4 style="font-size: 1rem; margin: 0; font-weight: 700;">Govt Subsidy</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Up to ₹78,000 direct subsidy support.</p>
+                    </div>
+                    
+                    <div class="value-card card glass-card reveal" style="padding: 1.5rem; flex-direction: column; align-items: center; text-align: center; gap: 0.75rem; display: flex; height: 100%;">
+                        <div class="value-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.1rem; flex-shrink: 0;"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h4 style="font-size: 1rem; margin: 0; font-weight: 700;">6% Solar Loans</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Up to ₹2,00,000 financing facility.</p>
+                    </div>
+                    
+                    <div class="value-card card glass-card reveal" style="padding: 1.5rem; flex-direction: column; align-items: center; text-align: center; gap: 0.75rem; display: flex; height: 100%;">
+                        <div class="value-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.1rem; flex-shrink: 0;"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4 style="font-size: 1rem; margin: 0; font-weight: 700;">Major Warranty</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Long warranties on panels & inverters.</p>
+                    </div>
+
+                    <div class="value-card card glass-card reveal" style="padding: 1.5rem; flex-direction: column; align-items: center; text-align: center; gap: 0.75rem; display: flex; height: 100%;">
+                        <div class="value-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.1rem; flex-shrink: 0;"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <h4 style="font-size: 1rem; margin: 0; font-weight: 700;">Local Service</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Active across Thiruvananthapuram.</p>
+                    </div>
+
+                    <div class="value-card card glass-card reveal" style="padding: 1.5rem; flex-direction: column; align-items: center; text-align: center; gap: 0.75rem; display: flex; height: 100%;">
+                        <div class="value-icon" style="margin: 0; width: 44px; height: 44px; font-size: 1.1rem; flex-shrink: 0;"><i class="fa-solid fa-toolbox"></i></div>
+                        <h4 style="font-size: 1rem; margin: 0; font-weight: 700;">Expert Install</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0; line-height: 1.4;">Premium branded components.</p>
+                    </div>
+                </div>
+            </div>
+        </sectio        <!-- Interactive Solar Savings Calculator & Packages Section -->
+        <section class="calculator section bg-alt" id="calculator">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Savings Estimator</span>
-                    <h2 class="section-title">Calculate Your Solar Potential</h2>
-                    <p class="section-desc">Estimate your custom system size, monthly savings, and payback period within seconds. Adjust the slider to see calculations update in real-time.</p>
+                    <span class="section-subtitle">Savings Estimator & System Sizes</span>
+                    <h2 class="section-title">Estimate Your Solar Potential</h2>
+                    <p class="section-desc">Adjust the monthly bill range slider to calculate recommended plant size, monthly savings, and view details of matching installation packages.</p>
                 </div>
                 
                 <div class="calculator-grid">
                     <!-- Calculator Inputs -->
-                    <div class="calc-input-block card glass-card reveal">
-                        <h3>Input Your Details</h3>
-                        <div class="form-group">
-                            <label for="monthly-bill">Average Monthly Electricity Bill (INR)</label>
-                            <div class="bill-slider-container">
-                                <span class="slider-val-display" id="bill-display">₹5,000</span>
-                                <input type="range" id="monthly-bill" min="1000" max="50000" step="500" value="5000" class="custom-slider">
-                                <div class="slider-labels">
-                                    <span>₹1,000</span>
-                                    <span>₹25,000</span>
-                                    <span>₹50,000</span>
+                    <div class="calc-input-block card glass-card reveal" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h3>Input Your Details</h3>
+                            
+                            <div class="form-group">
+                                <label for="monthly-bill">Average Monthly Electricity Bill</label>
+                                <div class="bill-slider-container">
+                                    <span class="slider-val-display" id="bill-display">₹5,000</span>
+                                    <input type="range" id="monthly-bill" min="1000" max="25000" step="500" value="5000" class="custom-slider">
+                                    <div class="slider-labels">
+                                        <span>₹1,000</span>
+                                        <span>₹12,500</span>
+                                        <span>₹25,000</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Installation Scope</label>
-                            <div class="property-toggle-btn-group">
-                                <div class="prop-btn active" style="flex: 1; cursor: default;"><i class="fa-solid fa-house"></i> Residential Rooftop Solar</div>
+                            
+                            <div class="form-group">
+                                <label for="solar-exposure">Rooftop Sunlight Exposure</label>
+                                <select id="solar-exposure" class="custom-select">
+                                    <option value="1.0">Optimal (Unshaded / All Day)</option>
+                                    <option value="0.85" selected>Partial Shade (Good)</option>
+                                    <option value="0.70">High Shade (Needs Assessment)</option>
+                                </select>
                             </div>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="solar-exposure">Rooftop Sunlight Exposure</label>
-                            <select id="solar-exposure" class="custom-select">
-                                <option value="1.0">Optimal (Unshaded / All Day)</option>
-                                <option value="0.85" selected>Partial Shade (Good)</option>
-                                <option value="0.70">High Shade (Needs Assessment)</option>
-                            </select>
-                        </div>
-                        
-                        <div class="calc-tips">
+                        <div class="calc-tips" style="margin-top: 1.5rem;">
                             <span class="tip-icon"><i class="fa-solid fa-lightbulb"></i></span>
-                            <p class="tip-text">Jeyar Brightech installations routinely save residential clients up to 90% on their electrical utility expenses.</p>
+                            <p class="tip-text">Jeyar Brightech installations save residential clients up to 90% on electricity bills across Thiruvananthapuram.</p>
                         </div>
                     </div>
                     
-                    <!-- Calculator Outputs -->
+                    <!-- Calculator Outputs & Dynamic Package -->
                     <div class="calc-result-block card glass-card reveal">
-                        <h3>Your Solar Estimate</h3>
+                        <h3>Your Custom Solar Estimate</h3>
                         
                         <div class="results-grid">
                             <div class="result-tile">
                                 <span class="result-icon"><i class="fa-solid fa-solar-panel"></i></span>
                                 <div>
                                     <span class="result-label">Recommended System</span>
-                                    <span class="result-value" id="res-system-size">4.0 kWp</span>
+                                    <span class="result-value" id="res-system-size">5.0 kWp</span>
                                 </div>
                             </div>
                             
@@ -294,15 +213,15 @@
                                 <span class="result-icon"><i class="fa-solid fa-sack-dollar"></i></span>
                                 <div>
                                     <span class="result-label">Est. Monthly Savings</span>
-                                    <span class="result-value text-emerald" id="res-monthly-savings">₹4,250</span>
+                                    <span class="result-value text-emerald" id="res-monthly-savings">₹4,500</span>
                                 </div>
                             </div>
                             
                             <div class="result-tile">
-                                <span class="result-icon"><i class="fa-solid fa-arrows-up-to-line"></i></span>
+                                <span class="result-icon"><i class="fa-solid fa-maximize"></i></span>
                                 <div>
                                     <span class="result-label">Required Roof Space</span>
-                                    <span class="result-value" id="res-roof-space">400 sq. ft.</span>
+                                    <span class="result-value" id="res-roof-space">500 sq. ft.</span>
                                 </div>
                             </div>
                             
@@ -310,94 +229,175 @@
                                 <span class="result-icon"><i class="fa-solid fa-rotate-left"></i></span>
                                 <div>
                                     <span class="result-label">Estimated Payback ROI</span>
-                                    <span class="result-value" id="res-payback">4.2 Years</span>
+                                    <span class="result-value" id="res-payback">4.5 Years</span>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="eco-impact-box">
-                            <h4>Annual Carbon Footprint Impact</h4>
-                            <div class="eco-stats">
-                                <div class="eco-stat">
-                                    <span class="eco-icon"><i class="fa-solid fa-tree"></i></span>
-                                    <div>
-                                        <span class="eco-val" id="res-trees">98</span>
-                                        <span class="eco-lbl">Trees Planted / Yr</span>
-                                    </div>
+
+                        <!-- Dynamic Recommended Package Card -->
+                        <div class="recommended-package-card" style="margin-top: 2rem; padding: 1.5rem; background: rgba(var(--accent-emerald-rgb), 0.04); border: 1px solid rgba(var(--accent-emerald-rgb), 0.15); border-radius: 16px;">
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                                <i class="fa-solid fa-cube text-emerald"></i> Recommended: <span id="rec-package-name" style="color: var(--accent-emerald); font-weight: 700;">5 kW Solar Plant</span>
+                            </h4>
+                            <p id="rec-package-desc" style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem; line-height: 1.4;">
+                                Our most popular option for average Indian families. Easily offsets consumption from multiple ACs, refrigerators, and water pumps.
+                            </p>
+                            
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1rem;">
+                                <div style="display: flex; gap: 1.5rem;">
+                                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);"><i class="fa-solid fa-bolt text-amber"></i> Daily Yield: <span id="rec-package-yield">20–25 Units</span></span>
+                                    <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);"><i class="fa-solid fa-shield text-emerald"></i> Warranty: <span id="rec-package-warranty">30 Years</span></span>
                                 </div>
-                                <div class="eco-stat">
-                                    <span class="eco-icon"><i class="fa-solid fa-car-side"></i></span>
-                                    <div>
-                                        <span class="eco-val" id="res-co2">2.4 Tons</span>
-                                        <span class="eco-lbl">CO2 Emissions Saved</span>
-                                    </div>
+                                <button id="toggle-spec-btn" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.8rem; border-color: var(--border-color);"><i class="fa-solid fa-table"></i> View Spec Sheet</button>
+                            </div>
+
+                            <!-- Collapsible Spec Sheet -->
+                            <div id="collapsible-specs" class="hidden" style="transition: all 0.3s ease;">
+                                <div class="spec-table-container">
+                                    <table class="spec-table" style="font-size: 0.8rem; margin: 0; width: 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th>Component</th>
+                                                <th>Brand / Make</th>
+                                                <th>Warranty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Solar Panels</strong></td>
+                                                <td>PAHAL / Equalance Topcon</td>
+                                                <td><span class="text-emerald">30 Years</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Inverter (with WiFi)</strong></td>
+                                                <td>Selec / Vsole / Equivalent</td>
+                                                <td><span class="text-emerald">10 Years</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>DC / AC DB Boxes</strong></td>
+                                                <td>L&T / Havells / Equivalent</td>
+                                                <td><span>5 Years</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Wiring & Structure</strong></td>
+                                                <td>Polycab / Havells / 16G Pipes</td>
+                                                <td><span>5–10 Years</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Earthing & Meter</strong></td>
+                                                <td>Excel / Reputed Make</td>
+                                                <td><span>5 Years</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
+                            
+                            <div style="display: flex; gap: 1rem; align-items: center; margin-top: 1rem; flex-wrap: wrap;">
+                                <a href="#contact" class="btn btn-primary" style="flex: 1; text-align: center; padding: 0.6rem 1.2rem; font-size: 0.85rem;"><i class="fa-solid fa-circle-check"></i> Lock in Quote</a>
+                                <a href="https://wa.me/917306670442" target="_blank" class="btn btn-outline" style="border-color: #25d366; color: #25d366; text-decoration: none; padding: 0.6rem 1.2rem; font-size: 0.85rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                            </div>
                         </div>
-                        
-                        <a href="#contact" class="btn btn-primary btn-block text-center"><i class="fa-solid fa-circle-check"></i> Lock in this Solar Quote</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Featured Package Section -->
-        <section class="products section bg-alt" id="package">
+        <!-- FAQ & Contact Section -->
+        <section class="contact section" id="contact">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Spec Sheet</span>
-                    <h2 class="section-title">Featured 5 kW Solar Package</h2>
-                    <p class="section-desc">Review the exact components, premium manufacturers, and extended warranties included in our signature 5 kW residential system.</p>
+                    <span class="section-subtitle">Support & Inquiry</span>
+                    <h2 class="section-title">Common Inquiries & Contact Info</h2>
+                    <p class="section-desc">Get your answers, view our location, or send us a request. Mr. Santhosh Kumar J. R. oversees all proposal designs.</p>
                 </div>
                 
-                <div class="card glass-card reveal" style="padding: 2.5rem;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
-                        <div>
-                            <h3 style="font-size: 1.5rem; margin-bottom: 0.25rem;">System Specifications Table</h3>
-                            <p style="color: var(--text-secondary); font-size: 0.95rem;">High-durability residential fittings for Thiruvananthapuram homes.</p>
+                <div class="contact-grid">
+                    <!-- Left Column: FAQ & Contact Info -->
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <!-- FAQ Accordion -->
+                        <div class="faq-accordion-list" style="margin-top: 0;">
+                            <div class="faq-item card glass-card reveal">
+                                <button class="faq-question">
+                                    <span>How long does physical installation take?</span>
+                                    <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Physical installation of frames, wiring, and panel arrays takes 1 to 2 days. Net-metering approval with KSEB (Kerala State Electricity Board) may take an additional 10 to 15 days.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item card glass-card reveal">
+                                <button class="faq-question">
+                                    <span>How do government subsidies work?</span>
+                                    <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Residential homes in Thiruvananthapuram can receive government subsidies up to ₹78,000. Our team handles the application paperwork directly on the national solar portal.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item card glass-card reveal">
+                                <button class="faq-question">
+                                    <span>What financing support is available?</span>
+                                    <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>We assist in securing solar loan facilities of up to ₹2,00,000 at a competitive 6% interest rate to help you transition with minimal upfront capital.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div style="padding: 0.5rem 1.25rem; background-color: rgba(var(--accent-amber-rgb), 0.08); border: 1px solid rgba(var(--accent-amber-rgb), 0.2); border-radius: 12px; font-weight: 600; color: var(--accent-amber); font-size: 0.9rem;">
-                            <i class="fa-solid fa-chart-line"></i> Expected Generation: 20–25 Units / Day
+
+                        <!-- Contact Info Cards -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="info-card card glass-card reveal" style="padding: 1rem 1.25rem;">
+                                <div class="info-icon" style="font-size: 1.1rem; width: 36px; height: 36px; margin-bottom: 0.5rem;"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4 style="font-size: 0.9rem;">Call / WhatsApp</h4>
+                                    <p style="font-size: 0.8rem; margin: 0;"><a href="tel:8590549069">8590549069</a></p>
+                                    <p style="font-size: 0.8rem; margin: 0;"><a href="https://wa.me/917306670442" target="_blank" style="color: var(--accent-emerald); font-weight: 600;">WhatsApp Us</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-card card glass-card reveal" style="padding: 1rem 1.25rem;">
+                                <div class="info-icon" style="font-size: 1.1rem; width: 36px; height: 36px; margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4 style="font-size: 0.9rem;">Email</h4>
+                                    <p style="font-size: 0.8rem; margin: 0;"><a href="mailto:solarjeyar@gmail.com">solarjeyar@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="info-card card glass-card reveal" style="padding: 1rem 1.25rem; grid-column: span 2;">
+                                <div class="info-icon" style="font-size: 1.1rem; width: 36px; height: 36px; margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4 style="font-size: 0.9rem;">Office Address</h4>
+                                    <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.3; margin: 0;">
+                                        CRRA 3A, Engineers' Lane, Near Casa In Hotel, Chirakkulam Road, Statue, Thiruvananthapuram – 695001
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="spec-table-container">
-                        <table class="spec-table">
-                            <thead>
-                                <tr>
-                                    <th>Component</th>
-                                    <th>Brand / Make</th>
-                                    <th>Warranty</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>Solar Panels</strong></td>
-                                    <td>PAHAL / Equalance Topcon</td>
-                                    <td><span class="text-emerald">30 Years</span></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>5 kW Inverter with WiFi Monitoring</strong></td>
-                                    <td>Selec / Vsole / Equivalent</td>
-                                    <td><span class="text-emerald">10 Years</span></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>DC Distribution Board</strong></td>
-                                    <td>L&T / Havells / Equivalent</td>
-                                    <td><span>5 Years</span></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>AC Distribution Box</strong></td>
-                                    <td>L&T / Havells / Equivalent</td>
-                                    <td><span>5 Years</span></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Solar Meter with Box</strong></td>
-                                    <td>Reputed Make</td>
-                                    <td><span>5 Years</span></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Mounting Structure</strong></td>
+                    
+                    <!-- Right Column: Request a Quote & Map -->
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <!-- Contact Form -->
+                        <div class="contact-form-block card glass-card reveal" style="margin-top: 0; padding: 2rem;">
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1.25rem;">Request a Free Site Inspection</h3>
+                            <form id="solar-contact-form" autocomplete="on">
+                                <div class="form-row">
+                                    <div class="form-group flex-1">
+                                        <label for="contact-name" style="font-size: 0.8rem;">Name *</label>
+                                        <input type="text" id="contact-name" name="name" placeholder="John Doe" style="padding: 0.75rem 1rem; font-size: 0.85rem;" required>
+                                    </div>
+                                    <div class="form-group flex-1">
+                                        <label for="contact-phone" style="font-size: 0.8rem;">Phone *</label>
+                                        <input type="tel" id="contact-phone" name="phone" placeholder="8590549069" style="padding: 0.75rem 1rem; font-size: 0.85rem;" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contact-email" style="font-size: 0.8rem;">Email Address *</label>
                                     <input type="email" id="contact-email" name="email" placeholder="john@example.com" style="padding: 0.75rem 1rem; font-size: 0.85rem;" required>
                                 </div>
 
@@ -442,8 +442,6 @@
                     </div>
                 </div>
             </div>
-        </section>                </div>
-            </div>
         </section>
     </main>
 
@@ -458,6 +456,8 @@
                 <p style="font-style: italic; margin-bottom: 0.5rem; color: var(--accent-emerald);">"Powering Homes with Clean, Affordable Solar Energy."</p>
                 <p>Advanced residential solar installation services serving customers across Thiruvananthapuram. We engineer high-efficiency rooftop photovoltaic systems designed for complete home energy independence.</p>
                 <div class="social-links">
+                    <a href="https://www.facebook.com/share/18sNYL25ZQ/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/jeyarbrightech" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://wa.me/917306670442" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
@@ -467,332 +467,20 @@
                 <ul class="footer-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#package">Featured Package</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#process">Process</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-links-col">
-                <h4>Our Offerings</h4>
-                <ul class="footer-links">
-                    <li><a href="#services">3 kW Solar Plant</a></li>
-                    <li><a href="#services">5 kW Solar Plant</a></li>
-                    <li><a href="#services">8 kW Solar Plant</a></li>
-                    <li><a href="#services">10 kW Solar Plant</a></li>
-                    <li><a href="#services">Subsidy Assistance</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div class="container footer-bottom-container">
-                <p>&copy; 2026 Jeyar Brightech Solar Systems. All Rights Reserved.</p>
-                <p>Supervised by Mr. Santhosh Kumar J. R.</p>
-            </div>
-        </div>
-    </footer>
-        </div>
-    </footer>
-
-    <!-- Toast Container for Notifications -->
-    <div class="toast-container" id="toast-container"></div>
-
-    <script src="app.js"></script>
-</body>
-</html>
-
-                        <p>We deploy high-quality panels, hybrid grid inverters, structures, and wiring systems.</p>
-                    </div>
-
-                    <div class="process-step card glass-card reveal">
-                        <div class="step-number">5</div>
-                        <h4>Start Saving Electricity</h4>
-                        <p>Activate bidirectional meters, sync with electricity grids, and watch monthly utility bills drop.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Service Area Section -->
-        <section class="section" style="padding: 5rem 0; text-align: center; position: relative;">
-            <div class="calc-bg-glow"></div>
-            <div class="container reveal">
-                <div class="badge" style="margin-bottom: 1.5rem; background-color: rgba(var(--accent-emerald-rgb), 0.08);">
-                    <i class="fa-solid fa-location-dot"></i> Service Area
-                </div>
-                <h2 style="font-size: 2.25rem; margin-bottom: 1rem; font-family: 'Plus Jakarta Sans', sans-serif;">Proudly Serving Throughout Thiruvananthapuram</h2>
-                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">We proudly provide residential solar installation services, government subsidy processing, and onsite inspections throughout <strong>Thiruvananthapuram</strong>.</p>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq section bg-alt" id="faq">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Common Inquiries</span>
-                    <h2 class="section-title">Frequently Asked Questions</h2>
-                    <p class="section-desc">Got questions about grid synchronization, government subsidies, or structural installations? We have answers.</p>
-                </div>
-                
-                <div class="faq-accordion-list">
-                    <div class="faq-item card glass-card reveal">
-                        <button class="faq-question">
-                            <span>How long does the physical solar panel installation take?</span>
-                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>For standard residential structures (3kW to 10kW), the physical installation of structural frames, wiring, and panel arrays takes 1 to 2 days. The net-metering approval and solar integration with the local electric board (KSEB in Kerala) may take an additional 10 to 15 days depending on local regulatory processing timelines.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item card glass-card reveal">
-                        <button class="faq-question">
-                            <span>How do government subsidies work for Thiruvananthapuram homes?</span>
-                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>For residential solar installations in Thiruvananthapuram, you can receive government subsidies up to ₹78,000 depending on the plant capacity. Our team handles the subsidy application paperwork directly, ensuring a smooth approval process with the central government portal.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item card glass-card reveal">
-                        <button class="faq-question">
-                            <span>What financing support options are available?</span>
-                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>We assist you in procuring solar loan facilities of up to ₹2,00,000 at a competitive 6% interest rate. This ensures that you can switch to solar energy with minimal upfront investment and let your monthly power bill savings pay back the loan.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item card glass-card reveal">
-                        <button class="faq-question">
-                            <span>What warranties are provided on the solar packages?</span>
-                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>All our major packages offer long-term warranties for peace of mind. For example, our solar panels come with a 30-year manufacturer warranty, inverters feature 10 years of warranty support, and boards/cables carry 5 to 10 years of support. We assist with all after-sales warranty claims directly.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact section bg-alt" id="contact">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Get in Touch</span>
-                    <h2 class="section-title">Schedule Your Free Site Inspection</h2>
-                    <p class="section-desc">Our team will run a physical structure check, shade calculation, and design a custom solar layout plan for your rooftop.</p>
-                </div>
-                
-                <div class="contact-grid">
-                    <!-- Contact Information Cards -->
-                    <div class="contact-info-block">
-                        <div class="info-card card glass-card reveal">
-                            <div class="info-icon"><i class="fa-solid fa-user-check"></i></div>
-                            <div>
-                                <h4>Key Administrator</h4>
-                                <p class="text-white">Mr. Santhosh Kumar J. R. (Owner)</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-card card glass-card reveal">
-                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                            <div>
-                                <h4>Email Address</h4>
-                                <p><a href="mailto:solarjeyar@gmail.com">solarjeyar@gmail.com</a></p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-card card glass-card reveal">
-                            <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
-                            <div>
-                                <h4>Phone / WhatsApp</h4>
-                                <p><a href="tel:8590549069">8590549069</a> (Direct Support)</p>
-                                <p><a href="https://wa.me/917306670442" target="_blank" class="whatsapp-link"><i class="fa-brands fa-whatsapp text-emerald"></i> WhatsApp Chat: 7306670442</a></p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-card card glass-card reveal">
-                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                            <div>
-                                <h4>Office Address</h4>
-                                <p class="text-white" style="font-size: 0.9rem; line-height: 1.4;">
-                                    CRRA 3A, Engineers' Lane, Near Casa In Hotel, Chirakkulam Road, Statue, Thiruvananthapuram – 695001
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Google Maps Embed -->
-                        <div class="map-container reveal">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.9221191024345!2d76.944208!3d8.498877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05b3644f5c942d%3A0xe5fa8de9b37ee765!2sChirakkulam%20Rd%2C%20Statue%2C%20Palayam%2C%20Thiruvananthapuram%2C%20Kerala%20695001!5e0!3m2!1sen!2sin!4v1782307399999!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                    
-                    <!-- Contact Form -->
-                    <div class="contact-form-block card glass-card reveal">
-                        <h3>Request a Free Quote</h3>
-                        <form id="solar-contact-form" autocomplete="on">
-                            <div class="form-row">
-                                <div class="form-group flex-1">
-                                    <label for="contact-name">Your Full Name *</label>
-                                    <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
-                                </div>
-                                <div class="form-group flex-1">
-                                    <label for="contact-phone">Phone Number *</label>
-                                    <input type="tel" id="contact-phone" name="phone" placeholder="8590549069" required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="contact-email">Email Address *</label>
-                                <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contact-address">Installation Address *</label>
-                                <input type="text" id="contact-address" name="address" placeholder="Statue, Thiruvananthapuram - 695001" required>
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group flex-1">
-                                    <label for="contact-plant-size">Required Plant Size</label>
-                                    <select id="contact-plant-size" name="plant_size" class="custom-select">
-                                        <option value="3kW">3 kW Residential Solar Plant</option>
-                                        <option value="5kW" selected>5 kW Residential Solar Plant</option>
-                                        <option value="8kW">8 kW Residential Solar Plant</option>
-                                        <option value="10kW">10 kW Residential Solar Plant</option>
-                                    </select>
-                                </div>
-                                <div class="form-group flex-1">
-                                    <label for="contact-bill">Avg. Monthly Bill Range</label>
-                                    <select id="contact-bill" name="bill" class="custom-select">
-                                        <option value="under5k">Below ₹5,000 / month</option>
-                                        <option value="5kto15k">₹5,000 - ₹15,000 / month</option>
-                                        <option value="15kto30k">₹15,000 - ₹30,000 / month</option>
-                                        <option value="over30k">Above ₹30,000 / month</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="contact-msg">Message</label>
-                                <textarea id="contact-msg" name="message" rows="4" placeholder="Mention rooftop space details, shading issues, or specific timeline..."></textarea>
-                            </div>
-                            
-                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                                <button type="submit" class="btn btn-primary flex-1" id="form-submit-btn">
-                                    <span id="submit-btn-text"><i class="fa-solid fa-paper-plane"></i> Request Free Quote</span>
-                                    <span class="loader hidden" id="submit-loader"></span>
-                                </button>
-                                <a href="https://wa.me/917306670442" target="_blank" class="btn btn-outline" style="border-color: #25d366; color: #25d366; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-info">
-                <a href="#" class="logo">
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group flex-1">
-                                    <label for="contact-type">Connection Scope</label>
-                                    <select id="contact-type" name="type" class="custom-select">
-                                        <option value="full_setup">Full Solar Panel Setup</option>
-                                        <option value="battery_only">Battery Storage Upgrade</option>
-                                        <option value="maintenance">Maintenance & AMC audit</option>
-                                        <option value="other">General Consultation</option>
-                                    </select>
-                                </div>
-                                <div class="form-group flex-1">
-                                    <label for="contact-bill">Avg. Monthly Bill Range</label>
-                                    <select id="contact-bill" name="bill" class="custom-select">
-                                        <option value="under5k">Below ₹5,000 / month</option>
-                                        <option value="5kto15k">₹5,000 - ₹15,000 / month</option>
-                                        <option value="15kto30k">₹15,000 - ₹30,000 / month</option>
-                                        <option value="over30k">Above ₹30,000 / month</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                    <label for="contact-bill">Avg. Monthly Bill Range</label>
-                                    <select id="contact-bill" name="bill" class="custom-select">
-                                        <option value="under5k">Below ₹5,000 / month</option>
-                                        <option value="5kto15k">₹5,000 - ₹15,000 / month</option>
-                                        <option value="15kto30k">₹15,000 - ₹30,000 / month</option>
-                                        <option value="over30k">Above ₹30,000 / month</option>
-                                    </select>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="contact-msg">Message</label>
-                                <textarea id="contact-msg" name="message" rows="4" placeholder="Mention rooftop space details, shading issues, or specific timeline..."></textarea>
-                            </div>
-                            
-                            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                                <button type="submit" class="btn btn-primary flex-1" id="form-submit-btn">
-                                    <span id="submit-btn-text"><i class="fa-solid fa-paper-plane"></i> Request Free Quote</span>
-                                    <span class="loader hidden" id="submit-loader"></span>
-                                </button>
-                                <a href="https://wa.me/917306670442" target="_blank" class="btn btn-outline" style="border-color: #25d366; color: #25d366; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-info">
-                <a href="#" class="logo">
-                    <span class="logo-icon"><i class="fa-solid fa-solar-panel"></i></span>
-                    <span class="logo-text">Jeyar <span class="highlight">Brightech</span></span>
-                </a>
-                <p>Advanced residential solar installation services. We engineer high-efficiency rooftop photovoltaic systems designed to provide complete home energy independence.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-links-col">
-                <h4>Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#calculator">Solar Calculator</a></li>
                     <li><a href="products.html">Products</a></li>
+                    <li><a href="#calculator">Solar Estimator</a></li>
+                    <li><a href="#contact">Contact & FAQ</a></li>
                 </ul>
             </div>
             
             <div class="footer-links-col">
                 <h4>Our Offerings</h4>
                 <ul class="footer-links">
-                    <li><a href="#solutions">Rooftop Solar</a></li>
-                    <li><a href="#solutions">Net-Metering Setup</a></li>
-                    <li><a href="#solutions">Off-Grid Battery Storage</a></li>
-                    <li><a href="#solutions">Thermal Maintenance Auditing</a></li>
-                    <li><a href="#contact">Site Assessment</a></li>
+                    <li><a href="#calculator">3 kW Solar Plant</a></li>
+                    <li><a href="#calculator">5 kW Solar Plant</a></li>
+                    <li><a href="#calculator">8 kW Solar Plant</a></li>
+                    <li><a href="#calculator">10 kW Solar Plant</a></li>
+                    <li><a href="#about">Subsidy Assistance</a></li>
                 </ul>
             </div>
         </div>
